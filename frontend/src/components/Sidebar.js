@@ -1,10 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Sidebar = ({ setView }) => {
+const Sidebar = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="sidebar">
-      <button onClick={() => setView('add')}>Add User</button>
-      <button onClick={() => setView('view')}>View Details</button>
+      <button onClick={() => navigate('/')}>View Details</button>
+      <button onClick={() => navigate('/add')}>Add User</button>
     </div>
   );
 };

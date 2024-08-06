@@ -17,6 +17,7 @@ function ViewDetails() {
             <th>Address</th>
             <th>Email</th>
             <th>Image</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -25,7 +26,7 @@ function ViewDetails() {
               <td>{user.name}</td>
               <td>{user.address}</td>
               <td>{user.email}</td>
-              <td><img src={user.image} alt={user.name} style={{ width: '50px', height: '0px' }} /></td>
+              <td><img src={user.image} alt={user.name}/></td>
             </tr>
           ))}
         </tbody>
